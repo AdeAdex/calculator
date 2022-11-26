@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .main-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    padding: 0px 30px;
+    background-image: url(pattern6.jpg);
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: cover;
+  }
+
+  .main {
+    width: 100%;
+    margin: auto;
+    height: auto;
+    background-color: darkcyan;
+    /* box-shadow: 1px 1px 10px 10px rgba(2,2,255,.8); */
+    position: static;
+    opacity: .8;
+    border-radius: 10px;
+  }
+ 
+
+  .screen-container {
+    height: 230px;
+    padding: 10px 25px 10px 25px;
+    background-color: rgb(5, 119, 119);
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .fa-circle {
+    color: rgb(11, 254, 11);
+    font-size: 5px;
+    position: relative;
+    top: -5px;
+    left: -15px;
+    animation:blinktext 30s infinite;
+  }
+
+  @keyframes blinktext{
+    0%{   color: rgb(11, 254, 11);   }
+    100%{  color: red;   }
+}
+
+  h3 {
+    color: darkorange;
+    font-size: 20px;
+    text-shadow: 0px 2px 5px darkblue;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 15px;
+  }
+
+  .solar-panel {
+    width: 30%;
+    height: 30px;
+    background-color: rgb(97, 94, 94);
+    position: relative;
+    top: -20px;
+    left: 70%;
+    border-radius: 3px;
+    display: flex;
+  }
+
+  #lights {
+    background-color: black;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 0px auto;
+  }
+
+  .solar-panel div  {
+    width: 20%;
+    height: 100%;
+    margin: 0px;
+    border: 1px solid rgb(126, 123, 123);
+  }
+  #myInput {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    color: black;
+    font-size: 35px;
+    text-align: end;
+    padding: 15px;
+    box-shadow: inset 0px 0px 5px 10px rgb(6, 81, 81);
+    border: none;
+    border-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    text-overflow: ellipsis;
+  }
+
+  /* #zero {
+    position: absolute;
+    right: 55px;
+    padding: 8px 25px;
+    text-align: right;
+    background-color: unset;
+    border: none;
+    color: white;
+    font-size: 20px;
+  } */
+
+  .switch-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    float: right;
+    right: 30px;
+    top: -10px;
+  }
+
+  .switch-txt {
+    color: white;
+    margin-top: 5px;
+  }
+
+
+
+
+  
+
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 15px;
+    margin-top: 10px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    left: 0px;
+    bottom: 2px;
+    background-color: white;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(27px);
+  }
+  
+  .slider.round {
+    border-radius: 40px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+
+
+  .action-area {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 8px 15px 20px 25px;
+    border-radius: 15px;
+  }
+
+  .action-area button {
+    width: 17%;
+    padding: 12px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-right: 12px;
+    margin-bottom: 8px;
+    background-color: greenyellow;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+  }
+
+  .action-area button:hover {
+    background-color: rgb(146, 231, 19);
+  }
+
+  .plus {
+    padding: 35px 12px !important;
+    width: 14% !important;
+    position: absolute;
+    left: 75%;
+    bottom: 117px;
+    z-index: 1;
+  }
+
+  @media screen and (min-width: 600px) {
+    .main {
+        width: 30%;
+        margin: auto;
+        height: auto;
+        background-color: darkcyan;
+        /* box-shadow: 1px 1px 10px 10px rgba(2,2,255,.8); */
+        position: static;
+        opacity: .8;
+        border-radius: 10px;
+      }
+
+      .plus {
+        padding: 35px 12px !important;
+        width: 4.6% !important;
+        position: absolute;
+        left: 58%;
+        bottom: 127px;
+        z-index: 1;
+        /* background-color: pink !important; */
+      }
+  }
+

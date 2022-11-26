@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="fontawesome-free-6.1.1-web/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="calculator.css">
+    <title>Simple Calculator</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="main">
+            <div class="screen-container">
+                <i class="fas fa-circle"></i>
+                <h3>Adex Calculator</h3>
+                <div id="lights"></div>
+                <div class="solar-panel">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <!-- <input type="text" id="zero"> -->
+                <input type="text" id="myInput" value="">
+            </div>
+              <div class="switch-container">
+                <label class="switch">
+                    <input type="checkbox" onclick="switchType()" id="switchInput">
+                    <span class="slider round"></span>
+                </label>
+                <span class="switch-txt">OFF / ON</span>
+            </div>
+            <div class="action-area">
+                <button onclick="valueOnScreen(`±`)"><i class="fas fa-plus-minus"></i></button>
+                <button onclick="memoryRemember()">rm</button>
+                <button onclick="memoryPlus()">m+</button>
+                <button onclick="memoryMinus()">m-</button>
+                <button onclick="valueOnScreen(`/`)"><i class="fas fa-divide"></i></button>
+                <button onclick="valueOnScreen(`%`)">Mod</button>
+                <button onclick="valueOnScreen(7)">7</button>
+                <button onclick="valueOnScreen(8)">8</button>
+                <button onclick="valueOnScreen(9)">9</button>
+                <button onclick="valueOnScreen(`*`)" id="times"><i class="fas fa-times"></i></button>
+                <button onclick="clearAll()">ca</button>
+                <button onclick="valueOnScreen(4)">4</button>
+                <button onclick="valueOnScreen(5)">5</button>
+                <button onclick="valueOnScreen(6)">6</button>
+                <button onclick="valueOnScreen(`-`)"><i class="fas fa-minus"></i></button>
+                <button onclick="delTodo()"><i class="fas fa-delete-left"></i></button>
+                <button onclick="valueOnScreen(1)">1</button>
+                <button onclick="valueOnScreen(2)">2</button>
+                <button onclick="valueOnScreen(3)">3</button>
+                <button onclick="valueOnScreen(`+`)"><i class="fas fa-plus"></i></button>
+                <button onclick="valueOnScreen(0)">0</button>
+                <button onclick="valueOnScreen('00')">00</button>
+                <button onclick="valueOnScreen('.')">•</button>
+                <button onclick="equals()">=</button>
+                <button class="plus" onclick="valueOnScreen(`+`)"><i class="fas fa-plus"></i></button>
+            </div>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
