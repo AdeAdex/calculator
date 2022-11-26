@@ -189,22 +189,23 @@
 
 
 
-  .action-area {
+ .action-area {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     padding: 8px 15px 20px 25px;
     border-radius: 15px;
+    gap: 12px;
   }
 
   .action-area button {
-    width: 17%;
+    width: 17% !important;
     padding: 12px;
     border-radius: 5px;
     text-transform: uppercase;
     font-size: 15px;
-    margin-right: 12px;
-    margin-bottom: 8px;
+    /* margin-right: 12px; */
+    /* margin-bottom: 8px; */
     background-color: greenyellow;
     cursor: pointer;
     border: none;
