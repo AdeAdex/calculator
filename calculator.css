@@ -195,7 +195,7 @@
     flex-wrap: wrap;
     padding: 8px 15px 20px 25px;
     border-radius: 15px;
-    gap: 12px;
+    gap: 8px;
   }
 
   .action-area button {
