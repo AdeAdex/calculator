@@ -201,7 +201,7 @@
     padding: 8px 25px 20px 25px;
     border-radius: 15px;
     justify-content: space-between;
-    gap: 15px 0px;
+    gap: 10px 0px;
   }
 
   .action-area button {
