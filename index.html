@@ -33,31 +33,34 @@
                 <span class="switch-txt">OFF / ON</span>
             </div>
             <div class="action-area">
-                <button onclick="valueOnScreen(`±`)"><i class="fas fa-plus-minus"></i></button>
-                <button onclick="memoryRemember()">rm</button>
-                <button onclick="memoryPlus()">m+</button>
-                <button onclick="memoryMinus()">m-</button>
-                <button onclick="valueOnScreen(`/`)"><i class="fas fa-divide"></i></button>
-                <button onclick="valueOnScreen(`%`)">Mod</button>
-                <button onclick="valueOnScreen(7)">7</button>
-                <button onclick="valueOnScreen(8)">8</button>
-                <button onclick="valueOnScreen(9)">9</button>
-                <button onclick="valueOnScreen(`*`)" id="times"><i class="fas fa-times"></i></button>
-                <button onclick="clearAll()">ca</button>
-                <button onclick="valueOnScreen(4)">4</button>
-                <button onclick="valueOnScreen(5)">5</button>
-                <button onclick="valueOnScreen(6)">6</button>
-                <button onclick="valueOnScreen(`-`)"><i class="fas fa-minus"></i></button>
-                <button onclick="delTodo()"><i class="fas fa-delete-left"></i></button>
-                <button onclick="valueOnScreen(1)">1</button>
-                <button onclick="valueOnScreen(2)">2</button>
-                <button onclick="valueOnScreen(3)">3</button>
-                <button onclick="valueOnScreen(`+`)"><i class="fas fa-plus"></i></button>
-                <button onclick="valueOnScreen(0)">0</button>
-                <button onclick="valueOnScreen('00')">00</button>
-                <button onclick="valueOnScreen('.')">•</button>
-                <button onclick="equals()">=</button>
-                <button class="plus" onclick="valueOnScreen(`+`)"><i class="fas fa-plus"></i></button>
+                <div class="other-action-btn">
+                    <button onclick="valueOnScreen(`-`)"><i class="fas fa-plus-minus"></i></button>
+                    <button onclick="memoryRemember()">rm</button>
+                    <button onclick="memoryPlus()">m+</button>
+                    <button onclick="memoryMinus()">m-</button>
+                    <button onclick="valueOnScreen(`%`)">Mod</button>
+                    <button onclick="valueOnScreen(7)">7</button>
+                    <button onclick="valueOnScreen(8)">8</button>
+                    <button onclick="valueOnScreen(9)">9</button>
+                    <button onclick="clearAll()">ca</button>
+                    <button onclick="valueOnScreen(4)">4</button>
+                    <button onclick="valueOnScreen(5)">5</button>
+                    <button onclick="valueOnScreen(6)">6</button>
+                    <button onclick="delTodo()"><i class="fas fa-delete-left"></i></button>
+                    <button onclick="valueOnScreen(1)">1</button>
+                    <button onclick="valueOnScreen(2)">2</button>
+                    <button onclick="valueOnScreen(3)">3</button>
+                    <button onclick="valueOnScreen(0)">0</button>
+                    <button onclick="valueOnScreen('00')">00</button>
+                    <button onclick="valueOnScreen('.')">•</button>
+                    <button onclick="equals()">=</button>
+                </div>
+                <div class="arithmetic-action-btn">
+                    <button onclick="valueOnScreen(`/`)"><i class="fas fa-divide"></i></button>
+                    <button onclick="valueOnScreen(`*`)" id="times"><i class="fas fa-times"></i></button>
+                    <button onclick="valueOnScreen(`-`)"><i class="fas fa-minus"></i></button>
+                    <button class="plus" onclick="valueOnScreen(`+`)"><i class="fas fa-plus"></i></button>
+                </div>
             </div>
         </div>
     </div>
