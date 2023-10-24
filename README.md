@@ -1,4 +1,4 @@
-# calculator
+# Simple Calculator
 
 **Simple Calculator with Memory Functions**
 
